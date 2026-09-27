@@ -1,0 +1,9 @@
+# Keep real memory OUT of the repo (default working dir + any cache/output)
+memory/
+**/.embeddings-cache.json
+memory-graph.html
+*-graph.html
+
+node_modules/
+.DS_Store
+*.log

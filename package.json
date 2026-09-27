@@ -1,0 +1,19 @@
+{
+  "name": "recall",
+  "version": "0.1.0",
+  "description": "Local semantic recall + graph over a markdown memory dir for coding agents (Claude Code, Codex). Uses local embeddings — no cloud, no API cost.",
+  "type": "module",
+  "bin": {
+    "recall": "lib/recall.mjs",
+    "memory-graph": "lib/memory-graph.mjs"
+  },
+  "scripts": {
+    "recall": "node lib/recall.mjs",
+    "recall:links": "node lib/recall.mjs --links",
+    "graph": "node lib/memory-graph.mjs sample-memory ./memory-graph.html && echo 'memory-graph.html updated'",
+    "demo": "node lib/recall.mjs \"how do we handle deployments\" --dir sample-memory"
+  },
+  "keywords": ["claude-code", "codex", "agents", "memory", "embeddings", "ollama", "local-first"],
+  "license": "MIT",
+  "author": "Lukas Hager"
+}
